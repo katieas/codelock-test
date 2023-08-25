@@ -1,0 +1,4 @@
+#!/bin/sh
+read local_ref local_sha remote_ref remote_sha
+
+python3 ./.git/hooks/pre-push.py "$local_sha"
